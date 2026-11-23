@@ -1,0 +1,22 @@
+{
+  "name": "safe-tx-decoder",
+  "version": "0.1.0",
+  "description": "Read-only CLI for reviewing Safe multisig transactions before signing",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "safe-decode": "dist/cli.js" },
+  "files": ["dist", "CHANGELOG.md"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "vitest run"
+  },
+  "dependencies": { "viem": "^2.38.0" },
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.6"
+  },
+  "repository": "github:piolpro/safe-tx-decoder"
+}
